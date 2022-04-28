@@ -36,12 +36,12 @@ from functools import partial
 
 import ftrack_api.event.base
 
-from ftrack_event_model.update import FtrackEventUpdateModel
+from ftrack_event_model import event_model_factory
 
 
 def handler(session: ftrack_api.Session,
             event: ftrack_api.event.base.Event):
-    event_model = FtrackEventUpdateModel(**event)
+    event_model = event_model_factory(event)
     for entity in event_model.data.entities:
         changes = entity.changes
         # ... do something with changes ...
