@@ -4,8 +4,8 @@ from ftrack_event_model.base import NestedDataModel, FtrackEventBaseModel
 
 
 class FtrackEventUpdateSourceUserModel(NestedDataModel):
-    id: str
-    username: str
+    id: Optional[str]
+    username: Optional[str]
 
 
 class FtrackEventUpdateDataUserModel(NestedDataModel):
@@ -14,8 +14,8 @@ class FtrackEventUpdateDataUserModel(NestedDataModel):
 
 
 class FtrackEventUpdateSourceModel(NestedDataModel):
-    id: str
-    applicationId: str
+    id: Optional[str]
+    applicationId: Optional[str]
     user: FtrackEventUpdateSourceUserModel
 
 
@@ -32,23 +32,23 @@ class FtrackEventUpdateDataEntityChangeOldToNewModel(NestedDataModel):
 
 
 class FtrackEventUpdateDataEntityModel(NestedDataModel):
-    entity_type: str
-    keys: List[str]
-    objectTypeId: str
-    entityType: str
-    parents: List[FtrackEventUpdateDataEntityParentModel]
+    entity_type: Optional[str]
+    keys: Optional[List[str]]
+    objectTypeId: Optional[str]
+    entityType: Optional[str]
+    parents: Optional[List[FtrackEventUpdateDataEntityParentModel]]
     parentId: Optional[str]
     action: str
-    entityId: str
-    changes: Dict[str, FtrackEventUpdateDataEntityChangeOldToNewModel]
+    entityId: Optional[str]
+    changes: Optional[Dict[str, FtrackEventUpdateDataEntityChangeOldToNewModel]]
 
 
 class FtrackEventUpdateDataModel(NestedDataModel):
     entities: List[FtrackEventUpdateDataEntityModel]
-    pushToken: str
+    pushToken: Optional[str]
     parents: list[str]
-    user: FtrackEventUpdateDataUserModel
-    clientToken: str
+    user: Optional[FtrackEventUpdateDataUserModel]
+    clientToken: Optional[str]
 
 
 class FtrackEventUpdateModel(FtrackEventBaseModel):

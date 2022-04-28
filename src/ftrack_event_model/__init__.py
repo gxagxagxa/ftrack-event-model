@@ -1,4 +1,6 @@
-def event_model_factory(topic: str, event):
+def event_model_factory(event):
+    topic = event.get('topic', '')
+
     if topic == 'ftrack.update':
         import ftrack_event_model.update
         return ftrack_event_model.update.FtrackEventUpdateModel(**event)
@@ -20,4 +22,4 @@ def event_model_factory(topic: str, event):
             import ftrack_event_model.action.trigger_user_interface
             return ftrack_event_model.action.trigger_user_interface.FtrackEventActionTriggerUserInterfaceModel(**event)
 
-    raise AttributeError('topic is not ftrack-defined')
+    return None

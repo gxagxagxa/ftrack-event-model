@@ -1,4 +1,4 @@
-from typing import Dict, List
+from typing import List, Optional
 
 from ftrack_event_model.base import NestedDataModel, FtrackEventBaseModel
 
@@ -15,8 +15,8 @@ class FtrackEventActionDiscoverDataSorterModel(NestedDataModel):
 
 
 class FtrackEventActionDiscoverDataModel(NestedDataModel):
-    selection: List[FtrackEventActionDiscoverDataSelectionEntityModel]
-    groupers: List[Dict[str, str]]
+    selection: Optional[List[FtrackEventActionDiscoverDataSelectionEntityModel]]
+    groupers: List
     filters: List
     sorters: List[FtrackEventActionDiscoverDataSorterModel]
 
