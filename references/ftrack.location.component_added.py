@@ -1,0 +1,11 @@
+{'id': 'ea0b305acf5745d4ae2a78aa609abec1',
+ 'data': {'component_id': '1d1999da-c76d-11ec-9ae8-928afa1aad5c',
+          'location_id': '3a372bde-05bc-11e4-8908-20c9d081909b'},
+ 'topic': 'ftrack.location.component-added',
+ 'sent': None,
+ 'source': {'applicationId': 'ftrack.client.web',
+            'id': '33d96f42-c768-11ec-9ae8-928afa1aad5c',
+            'user': {'username': 'wuqingjun@qiyi.com',
+                     'id': 'bcdf57b0-acc6-11e1-a554-f23c91df1211'}},
+ 'target': '',
+ 'in_reply_to_event': None}

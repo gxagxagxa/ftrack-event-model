@@ -1,0 +1,11 @@
+{'id': '080d1aa635ae401db7b478482359c86a',
+ 'data': {'locationName': 'ftrack.server',
+          'platform': 'Linux',
+          'componentId': '1d521184-c76d-11ec-9ae8-928afa1aad5c'},
+ 'topic': 'ftrack.location.request-resolve',
+ 'sent': None,
+ 'source': {'id': '4aa82902d5524c0cb4a61c98d7426112',
+            'user': {'username': 'wuqingjun@qiyi.com',
+                     'id': 'bcdf57b0-acc6-11e1-a554-f23c91df1211'}},
+ 'target': '',
+ 'in_reply_to_event': None}
