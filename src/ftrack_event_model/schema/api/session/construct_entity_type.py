@@ -1,8 +1,6 @@
-from typing import Optional, List, Any
+from typing import Any
 
-from pydantic import Field
-
-from ftrack_event_model.base import NestedDataModel, FtrackEventBaseModel
+from ftrack_event_model.schema.base import FtrackEventBaseModel
 
 
 # class FtrackEventAPISessionConstructEntityTypeDataSchemaPropertyRefModel(NestedDataModel):

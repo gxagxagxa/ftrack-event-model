@@ -11,15 +11,15 @@ class NestedDataModel(BaseModel):
             super().__init__(**data)
 
 
-class FtrackEventBaseSourceUserModel(NestedDataModel):
+class FtrackBaseSourceUserModel(NestedDataModel):
     username: Optional[str]
     id: Optional[str]
 
 
-class FtrackEventBaseSourceModel(NestedDataModel):
+class FtrackBaseSourceModel(NestedDataModel):
     id: Optional[str]
     applicationId: Optional[str]
-    user: Optional[FtrackEventBaseSourceUserModel]
+    user: Optional[FtrackBaseSourceUserModel]
 
 
 class FtrackEventBaseModel(NestedDataModel):
