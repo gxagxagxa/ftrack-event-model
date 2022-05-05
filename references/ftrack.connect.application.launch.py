@@ -58,7 +58,7 @@
           'application': {'identifier': 'premiere_pro_CC 2021',
                           'path': '/Applications/Adobe Premiere Pro 2021/Adobe Premiere Pro 2021.app',
                           'launchArguments': None,
-                          'version': LooseVersion('2021'),
+                          'version': 'LooseVersion(\'2021\')',
                           'label': 'Premiere Pro',
                           'icon': 'https://iqiyi.ftrackapp.cn/application_icons/premiere.png',
                           'variant': 'CC 2021',
